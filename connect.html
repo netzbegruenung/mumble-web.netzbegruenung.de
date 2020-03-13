@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mumble Webclient</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="connect.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">Du benutzt einen alten Browser. Bitte <a href="https://browsehappy.com/">aktualisiere deinen Browser</a>!</p>
+  <![endif]-->
+
+  <div class="container">
+    <!-- Add your site or application content here -->
+    <h1>Mumble Server der Netzbegrünung</h1>
+    <p>Mumble ist ein Audiokonferenzsystem, mit dem Ihr euch per Webbrowser, Smartphone und Desktop App verbinden könnt.</p>
+    <p>Am einfachsten kannst du teilnehmen, indem du hier deinen Benutzernamen eingibst und dann auf "Verbinden" klickst.</p>
+    <div>
+      <h2>Einfach mit dem Webbrowser teilnehmen</h2>
+      <form id="connect">
+      <div class="status warn" id="nomedia">
+  Achtung: Dein Mikrofon konnte nicht erkannt werden! Probiere es doch mit einem anderen Webbrowser (Firefox oder Chrome) oder sollte es auch da nicht gehen mit der Desktop oder Smartphone <a href="https://hilfe.netzbegruenung.de/mumble/">App</a>.
+      </div>
+      <div class="status warn" id="allowmedia">
+        Achtung: Bitte erlaube noch den Zugriff auf dein Mikrofon damit das Programm funktioniert!
+      </div>
+      <div class="status warn" id="failed">
+        Achtung: Wenn du den Zugriff auf den Mikrofon verbietest, dann wird dich niemand hören können! ;)
+      </div>
+      <p class="error">Bitte gib einen Benutzernamen ein.</p><input id="username" type="text" placeholder="Hier bitte deinen Namen eingeben" /><input type="submit" value="Verbinden" /></form>
+    </div>
+    <h2>App auf Computer oder Smartphone installieren</h2>
+    <p>Wenn du die App auf deinem Computer oder deinem Smartphone installieren möchstest, dann findest du mehr Informationen <a href="https://hilfe.netzbegruenung.de/mumble/">hier</a>. Sobald du die App auf deinem Computer installiert hast, kannst du einfach <a href="mumble://mumble.netzbegruenung.de:64738/">hier klicken um dich zu verbinden</a>.</p>
+  </div>
+  <script src="jquery.js"></script>
+  <script src="connect.js"></script>
+</body>
+</html>
