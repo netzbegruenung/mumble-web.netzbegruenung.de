@@ -1,0 +1,1 @@
+Vereinfachung sich mit einem Mumble Server per https://github.com/Johni0702/mumble-web zu verbinden. Die Dateien dieses Repositories müssen in das Verzeichniss in dem die index.html des mumble-web Clients liegt abgelegt werden. Danach kann die connect.html geöffnet werden.
