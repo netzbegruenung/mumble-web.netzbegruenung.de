@@ -23,16 +23,19 @@
     <p>Mumble ist ein Audiokonferenzsystem, mit dem Ihr euch per Webbrowser, Smartphone und Desktop App verbinden könnt.</p>
     <p>Am einfachsten kannst du teilnehmen, indem du hier deinen Benutzernamen eingibst und dann auf "Verbinden" klickst.</p>
     <div>
+      <div id="recommendedbrowser" class="status recommended">
+        <h3>Hinweis</h3><p>Diese Seite funktioniert mit deinem Browser nicht so gut. Am besten hören dich die anderen mit Firefox. Wenn du noch keinen Firefox hast kannst du dir Firefox auch <a href="https://www.mozilla.org/de/firefox/download/thanks/">hier ganz einfach auf deinem Computer installieren</a>.</p>
+      </div>
       <h2>Einfach mit dem Webbrowser teilnehmen</h2>
       <form id="connect">
       <div class="status warn" id="nomedia">
-  Achtung: Dein Mikrofon konnte nicht erkannt werden! Probiere es doch mit einem anderen Webbrowser (Firefox oder Chrome) oder sollte es auch da nicht gehen mit der Desktop oder Smartphone <a href="https://hilfe.netzbegruenung.de/mumble/">App</a>.
+        <h3>Achtung</h3><p>Dein Mikrofon konnte nicht erkannt werden! Probiere es doch mit einem anderen Webbrowser (<a href="https://www.mozilla.org/de/firefox/download/thanks/">Firefox</a> oder Chrome) oder sollte es auch da nicht gehen mit der Desktop oder Smartphone <a href="https://hilfe.netzbegruenung.de/mumble/">App</a>.</p>
       </div>
       <div class="status warn" id="allowmedia">
-        Achtung: Bitte erlaube noch den Zugriff auf dein Mikrofon damit das Programm funktioniert!
+        <h3>Achtung</h3><p>Bitte erlaube noch den Zugriff auf dein Mikrofon damit andere dich hören können!</p>
       </div>
       <div class="status warn" id="failed">
-        Achtung: Wenn du den Zugriff auf den Mikrofon verbietest, dann wird dich niemand hören können! ;)
+        <h3>Achtung</h3><p>Wenn du den Zugriff auf den Mikrofon verbietest, dann wird dich niemand hören können! ;)</p>
       </div>
       <p class="error">Bitte gib einen Benutzernamen ein.</p><input id="username" type="text" placeholder="Hier bitte deinen Namen eingeben" /><input type="submit" value="Verbinden" /></form>
     </div>

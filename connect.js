@@ -5,7 +5,7 @@ function popupc(username) {
   var left = (screen.width/2)-(width/2);
   var top = (screen.height/2)-(height/2);
 
-  return window.open("/?username=" + encodeURIComponent(username), "mumble", "width="+width+",height="+height+",top="+top+", left="+left);
+  return window.open("/client.html?username=" + encodeURIComponent(username), "mumble", "width="+width+",height="+height+",top="+top+", left="+left);
 }
 
 function deUmlaut(value){
@@ -58,6 +58,10 @@ function requestMedia(success, failed) {
 }
 
 requestMedia();
+
+if (navigator.userAgent.indexOf('Firefox') !== -1) {
+  jQuery('#recommendedbrowser').hide();
+}
 
   jQuery(document).on('submit', '#connect', function(e) {
     e.preventDefault();
